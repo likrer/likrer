@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main()
+{
+  //创建一个简单的计算器
+  double first_num;
+  double second_num;
+  char i;       //添加运算符号
+  printf("请输入第一个数字：");
+  scanf_s("%lf",&first_num);
+  printf("\n");
+  printf("请输入+，-，*，/运算符号：");
+  scanf_s("%c",&i);
+  printf("\n");
+  printf("请输入第二个数字：");
+  scanf_s("%lf",&second_num);
+  printf("\n");
+  switch (i)
+	{
+	case'+':
+		printf("%.3lf + %.3lf = %.4lf", first_num, second_num, first_num + second_num);
+
+		break;
+	case'-':
+		printf("%.3lf - %.3lf = %.4lf", first_num, second_num, first_num - second_num);
+
+		break;
+	case'*':
+		printf("%.3lf * %.3lf = %.4lf", first_num, second_num, first_num * second_num);
+
+		break;
+	case'/':
+		printf("%.3lf / %.3lf = %.4lf", first_num, second_num, first_num / second_num);
+
+		break;
+	default:
+		printf("抱歉，您输入的符号没有对上。");
+	}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  return 0;
+}
